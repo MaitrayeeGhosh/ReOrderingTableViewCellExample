@@ -69,7 +69,7 @@
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
 {
     [dataArray exchangeObjectAtIndex:sourceIndexPath.row withObjectAtIndex:destinationIndexPath.row];
-    [self.mTableView reloadData];
+    [self.mTableView moveRowAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
